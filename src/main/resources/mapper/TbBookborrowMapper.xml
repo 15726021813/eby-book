@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.eby.book.mapper.TbBookborrowMapper">
+  <resultMap id="BaseResultMap" type="cn.eby.book.entity.TbBookborrow">
+    <!--@mbg.generated-->
+    <!--@Table tb_bookborrow-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="zl_id" jdbcType="VARCHAR" property="zlId" />
+    <result column="rd_id" jdbcType="VARCHAR" property="rdId" />
+    <result column="bor_date" jdbcType="TIMESTAMP" property="borDate" />
+    <result column="rtn_date" jdbcType="TIMESTAMP" property="rtnDate" />
+    <result column="cont_cnt" jdbcType="INTEGER" property="contCnt" />
+    <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="remarks" jdbcType="LONGVARCHAR" property="remarks" />
+    <result column="Stypes" jdbcType="INTEGER" property="stypes" />
+    <result column="uptimes" jdbcType="TIMESTAMP" property="uptimes" />
+    <result column="upcount" jdbcType="INTEGER" property="upcount" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, zl_id, rd_id, bor_date, rtn_date, cont_cnt, username, remarks, Stypes, uptimes, 
+    upcount
+  </sql>
+</mapper>

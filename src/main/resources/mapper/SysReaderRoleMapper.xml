@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.eby.book.mapper.SysReaderRoleMapper">
+  <resultMap id="BaseResultMap" type="cn.eby.book.entity.SysReaderRole">
+    <!--@mbg.generated-->
+    <!--@Table sys_ReaderRole-->
+    <id column="RoleId" jdbcType="INTEGER" property="roleid" />
+    <result column="RoleName" jdbcType="VARCHAR" property="rolename" />
+    <result column="RoleInfo" jdbcType="LONGVARCHAR" property="roleinfo" />
+    <result column="Stypes" jdbcType="INTEGER" property="stypes" />
+    <result column="uptimes" jdbcType="TIMESTAMP" property="uptimes" />
+    <result column="upcount" jdbcType="INTEGER" property="upcount" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    RoleId, RoleName, RoleInfo, Stypes, uptimes, upcount
+  </sql>
+</mapper>

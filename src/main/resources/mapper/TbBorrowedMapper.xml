@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.eby.book.mapper.TbBorrowedMapper">
+  <resultMap id="BaseResultMap" type="cn.eby.book.entity.TbBorrowed">
+    <!--@mbg.generated-->
+    <!--@Table tb_borrowed-->
+    <id column="logid" jdbcType="BIGINT" property="logid" />
+    <result column="logtype" jdbcType="SMALLINT" property="logtype" />
+    <result column="logtime" jdbcType="TIMESTAMP" property="logtime" />
+    <result column="rd_id" jdbcType="INTEGER" property="rdId" />
+    <result column="zl_id" jdbcType="INTEGER" property="zlId" />
+    <result column="zl_kind" jdbcType="INTEGER" property="zlKind" />
+    <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="Stypes" jdbcType="INTEGER" property="stypes" />
+    <result column="uptimes" jdbcType="TIMESTAMP" property="uptimes" />
+    <result column="upcount" jdbcType="INTEGER" property="upcount" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    logid, logtype, logtime, rd_id, zl_id, zl_kind, username, Stypes, uptimes, upcount
+  </sql>
+</mapper>

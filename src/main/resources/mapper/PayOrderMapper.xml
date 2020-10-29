@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.eby.book.mapper.PayOrderMapper">
+  <resultMap id="BaseResultMap" type="cn.eby.book.entity.PayOrder">
+    <!--@mbg.generated-->
+    <!--@Table pay_order-->
+    <id column="out_trade_no" jdbcType="BIGINT" property="outTradeNo" />
+    <result column="pay_amount" jdbcType="DECIMAL" property="payAmount" />
+    <result column="auth_no" jdbcType="BIGINT" property="authNo" />
+    <result column="pay_type" jdbcType="TINYINT" property="payType" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="pay_status" jdbcType="TINYINT" property="payStatus" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    out_trade_no, pay_amount, auth_no, pay_type, create_time,pay_status
+  </sql>
+</mapper>

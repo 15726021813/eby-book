@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.eby.book.mapper.TbInfoMapper">
+  <resultMap id="BaseResultMap" type="cn.eby.book.entity.TbInfo">
+    <!--@mbg.generated-->
+    <!--@Table tb_info-->
+    <result column="bk_id" jdbcType="INTEGER" property="bkId" />
+    <result column="bk_isbn" jdbcType="VARCHAR" property="bkIsbn" />
+    <result column="bk_ean13" jdbcType="VARCHAR" property="bkEan13" />
+    <result column="bk_name" jdbcType="VARCHAR" property="bkName" />
+    <result column="bk_subname" jdbcType="VARCHAR" property="bkSubname" />
+    <result column="bk_keyname" jdbcType="VARCHAR" property="bkKeyname" />
+    <result column="bk_auth" jdbcType="VARCHAR" property="bkAuth" />
+    <result column="bk_class" jdbcType="VARCHAR" property="bkClass" />
+    <result column="bk_kind" jdbcType="VARCHAR" property="bkKind" />
+    <result column="prs_nme" jdbcType="VARCHAR" property="prsNme" />
+    <result column="pub_plc" jdbcType="VARCHAR" property="pubPlc" />
+    <result column="pub_tme" jdbcType="VARCHAR" property="pubTme" />
+    <result column="page_ct" jdbcType="VARCHAR" property="pageCt" />
+    <result column="bk_pric" jdbcType="VARCHAR" property="bkPric" />
+    <result column="bk_edit" jdbcType="VARCHAR" property="bkEdit" />
+    <result column="bk_vol" jdbcType="VARCHAR" property="bkVol" />
+    <result column="bk_size" jdbcType="VARCHAR" property="bkSize" />
+    <result column="bk_share" jdbcType="VARCHAR" property="bkShare" />
+    <result column="bk_print" jdbcType="VARCHAR" property="bkPrint" />
+    <result column="bk_lang" jdbcType="VARCHAR" property="bkLang" />
+    <result column="bk_seri" jdbcType="VARCHAR" property="bkSeri" />
+    <result column="bk_oth" jdbcType="LONGVARCHAR" property="bkOth" />
+    <result column="bk_py" jdbcType="VARCHAR" property="bkPy" />
+    <result column="ipt_tme" jdbcType="TIMESTAMP" property="iptTme" />
+    <result column="bk_state" jdbcType="INTEGER" property="bkState" />
+    <result column="bk_type" jdbcType="VARCHAR" property="bkType" />
+    <result column="bk_fz" jdbcType="LONGVARCHAR" property="bkFz" />
+    <result column="bk_905" jdbcType="LONGVARCHAR" property="bk905" />
+    <result column="user_id" jdbcType="VARCHAR" property="userId" />
+    <result column="bk_pc" jdbcType="VARCHAR" property="bkPc" />
+    <result column="updatetimes" jdbcType="INTEGER" property="updatetimes" />
+    <result column="bk_sysid" jdbcType="INTEGER" property="bkSysid" />
+    <result column="getdatatimes" jdbcType="INTEGER" property="getdatatimes" />
+    <result column="lb_suit" jdbcType="BIT" property="lbSuit" />
+    <result column="types" jdbcType="INTEGER" property="types" />
+    <result column="Stypes" jdbcType="INTEGER" property="stypes" />
+    <result column="uptimes" jdbcType="TIMESTAMP" property="uptimes" />
+    <result column="upcount" jdbcType="INTEGER" property="upcount" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    bk_id, bk_isbn, bk_ean13, bk_name, bk_subname, bk_keyname, bk_auth, bk_class, bk_kind, 
+    prs_nme, pub_plc, pub_tme, page_ct, bk_pric, bk_edit, bk_vol, bk_size, bk_share, 
+    bk_print, bk_lang, bk_seri, bk_oth, bk_py, ipt_tme, bk_state, bk_type, bk_fz, bk_905, 
+    user_id, bk_pc, updatetimes, bk_sysid, getdatatimes, lb_suit, types, Stypes, uptimes, 
+    upcount
+  </sql>
+</mapper>

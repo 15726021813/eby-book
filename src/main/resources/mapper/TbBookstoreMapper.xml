@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.eby.book.mapper.TbBookstoreMapper">
+  <resultMap id="BaseResultMap" type="cn.eby.book.entity.TbBookstore">
+    <!--@mbg.generated-->
+    <!--@Table tb_bookstore-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="barid" jdbcType="INTEGER" property="barid" />
+    <result column="bk_id" jdbcType="INTEGER" property="bkId" />
+    <result column="place" jdbcType="VARCHAR" property="place" />
+    <result column="store" jdbcType="VARCHAR" property="store" />
+    <result column="status" jdbcType="VARCHAR" property="status" />
+    <result column="state" jdbcType="INTEGER" property="state" />
+    <result column="zj_mny" jdbcType="DECIMAL" property="zjMny" />
+    <result column="ipt_tme" jdbcType="TIMESTAMP" property="iptTme" />
+    <result column="msg" jdbcType="LONGVARCHAR" property="msg" />
+    <result column="oth" jdbcType="LONGVARCHAR" property="oth" />
+    <result column="user_id" jdbcType="VARCHAR" property="userId" />
+    <result column="del_time" jdbcType="TIMESTAMP" property="delTime" />
+    <result column="del_rsn" jdbcType="INTEGER" property="delRsn" />
+    <result column="Stypes" jdbcType="INTEGER" property="stypes" />
+    <result column="uptimes" jdbcType="TIMESTAMP" property="uptimes" />
+    <result column="upcount" jdbcType="INTEGER" property="upcount" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, barid, bk_id, place, store, [status], [state], zj_mny, ipt_tme, msg, oth, user_id, 
+    del_time, del_rsn, Stypes, uptimes, upcount
+  </sql>
+</mapper>

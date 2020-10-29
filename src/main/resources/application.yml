@@ -1,0 +1,67 @@
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:/mapper/*.xml
+  global-config:
+    db-config:
+      id-type: auto
+      table-underline: true
+      logic-not-delete-value: 0
+      logic-delete-value: 1
+spring:
+  application:
+    name: eby-book
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:sqlserver://47.105.170.169;database=ceshi;Encrypt=false
+    username: saadmin
+    password: '!@#$OOPI)'
+
+writeCar:
+  com: 2
+  port: 9600
+  address: 0
+
+D1081:
+  com: 3
+  port: 9600
+
+server:
+  port: 8092
+pay:
+  amount: 0.01
+  wxpay:
+    app:
+      appID: wx8735181e081ea497
+      mchID: 1602910799
+      key: GxMmEt49BoLHwbYvoxL4WYs4jBgjZaIE
+      certPath: cert/apiclient_cert.p12
+  alipay:
+  # 您的APPID
+    appId: 2021001192691814
+  # 商户私钥
+    privateKey: MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCSgVQvbIPkocLmM2R1wQjfVBdDtp93/bfcSb4oYF+enri9MmxEq2vJMdC9sxxEfP0Oc5Ps0gW9sT7YjXIbUo3qm2gkhj7+G6BSRpEcU5ohPfhFWmLQPMyIOF4jupxOQXk28SQ2Ari4iZ3BpM/Qr9w5CWlCAG9zGWMzVFCG76tXausNtpAZjo6vFVFjmjCDQTwicuuj6badc4vh0mBfSkMXUNWjDD8rKgfySmNh0PA2J2CWmfH7bWT3GAH0iuxzx5VN5dMZBdfVj314DCjv85KsxYSoZriQGQXvlAwElxxuQabs4QytkpMHYndJU1kR+JdL1DzYIiGY4a9EhcALhlU9AgMBAAECggEABP8KGu/tc4+csPMRuv5RSiR5AqMovxPVAFs3c/MNb8Bj9nfQv2rFK0BaqQ2BqkhE7Qg+BDaJYZW42fPA73OaSWTxYUV+wnW4uvWTH08uk3GklODnO8jHBOI/O6Kyj+ylsJz6qijfmdN/oMn5GFnW/c73Wvve0SMNggOfF2r3Ae0jRK0+DxK5WkhofN3vwv8qT4J8hxV1n/x0+/YDaznhxM2TEJl2qYa/q/2Q8AKwC9yXZgszOSAmV+vKVn7WDXdfP89+Kek5Z/5/+q6kcoWwtdhqKqnnyMref+2u+vc/rsECXRqByYFqrZYgLXfRu6fvI3OzsalpA54OZ6cPb8j+IQKBgQDRwQrseKrjy81uRAkJ2NcNlEnWbLMG93ax3C7cETi1dlwaurdHoI3yrpa9ehHBDqsOH1o3UEA4pF5LBDgec1P/VV+3cg1P6K9Gq8GQTyWT2rfyd0SG4Ng723SUwC5MVInBH5WBDPaa8hMXXJBZ6bvomrMli/At00lfL0XOsK7ImQKBgQCyzmMqLa+AnwqiQulj8/Vt0cNdp7HZ+kfhMLTiM5M29P1zTJwRMyrkupGF4dVmEjjxJb3PBQx5oWZp0dXkTX09aM3QWi8ELXzo45Ytvf84t5RiiKKLLQ8o09gd9xFX8jyjPY97IcnhD2BaloMsk18RfzUeeNq1dUscAAGfPxLkRQKBgQC64GewGS3/uDL1263F1Sh8k7JZVQ0H1vAsNISXUsyYd7RFqDbknPn6zmvEsn4g58Wk1nAVOe2NyXutEDxDfPLIWTLnCLktiZyntRzGSo2rNkGOx44JMUfVxIcQhEx7exIkOtSDXp5Tm/tAZBrD0Me2zCVx/URmP4luQXrLVITUeQKBgA+I+vipK3xjVQswARMcGRDHjs/OSBeGNUSNdMnKbVnzAypHV6/u4CUrSIV3T5EkuCnLe6hG6gSPT1SWVJ0XVnBFcMxPaZJVWWrqixvCTDBjUtMUx/qLmauUbEx+MNWRSE9ug87Q6rdRHLACL7dpvnLIuJbDLU1iuXnfTkTFuCB5AoGAU110+H+PWy4Z3nGP1mBcVje9Evlm+ERMrYfVF7mFKZm05aJ/IuSksr5AUN4+aTlyl//iIsccprP4Q4h9FjVoqxPFVtNHyB7IdK0iRsyJifY/6DWRmtS0iRPl3d2+G7PG5QZN5w5kxspEaxJ5jYsmkgEmo7BMLN6BrPuuwohtkZY=
+  # 支付宝公钥
+    publicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAl0D9ro/dJPTSEmOVpmc3ZyeMhpY9Cw6bHfPWU8UVwUGM82HnEqDOizVlDthjpk/P8Nu20WNBuK3mg1aKwqsA0qtlAOhjLXj5dHhCQh+OEBfMWBG3Ubs1EI43upS9CWyV8IY1YdFQLdsIfGvCO1gKxsvf+eGMnjiNbKeKeYm51UZ0vr18PDckE4xMaWQx4Ek6bmZcAJYcCsjLI/V89gfi50b3zQzy0KGC7kcSXI/oAfo6RpxLvzR/OGoMjLm6I0O0e+LLsr87LClQ3YT+dEvFBeRMTSHdLi8lSiZKbrcaFQLDXWLfk6TcYm97mAoWeg9N3whdWXt/o2bku+m2/GIjOwIDAQAB
+  # 服务器异步通知页面路径 ,需要公网能访问到。
+    notifyUrl: http://kbug.free.idcfengye.com/ok
+  # 页面跳转同步通知页面路径 需要公网能访问到。
+    returnUrl: 192.168.3.24:8080
+  # 签名方式
+    signType: RSA2
+  # 字符编码格式
+    charset: utf-8
+  # 支付宝网关
+    gatewayUrl: https://openapi.alipay.com/gateway.do
+  # 支付宝网关
+    logPath: "C:\\"
+  #订单交易时间
+    outTime: 10m
+RFID:
+  #rfid使用com口
+  COMName: "COM5"
+  #rfid的波特率
+  BaudRate: "38400"
+  #rfid中dll所在路径
+  sLibPath: "C:"

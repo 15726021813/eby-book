@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.eby.book.mapper.TbReaderMapper">
+  <resultMap id="BaseResultMap" type="cn.eby.book.entity.TbReader">
+    <!--@mbg.generated-->
+    <!--@Table tb_reader-->
+    <id column="rd_id" jdbcType="INTEGER" property="rdId" />
+    <result column="id" jdbcType="INTEGER" property="id" />
+    <result column="rd_name" jdbcType="VARCHAR" property="rdName" />
+    <result column="rd_sex" jdbcType="SMALLINT" property="rdSex" />
+    <result column="rd_birth" jdbcType="VARCHAR" property="rdBirth" />
+    <result column="rd_reg" jdbcType="VARCHAR" property="rdReg" />
+    <result column="rd_over" jdbcType="VARCHAR" property="rdOver" />
+    <result column="rd_state" jdbcType="INTEGER" property="rdState" />
+    <result column="rd_roleid" jdbcType="INTEGER" property="rdRoleid" />
+    <result column="rd_mny" jdbcType="DECIMAL" property="rdMny" />
+    <result column="rd_pwd" jdbcType="VARCHAR" property="rdPwd" />
+    <result column="rd_PhotosPath" jdbcType="VARCHAR" property="rdPhotospath" />
+    <result column="rd_py" jdbcType="VARCHAR" property="rdPy" />
+    <result column="rd_corp" jdbcType="VARCHAR" property="rdCorp" />
+    <result column="rd_dpt" jdbcType="VARCHAR" property="rdDpt" />
+    <result column="rd_grad" jdbcType="VARCHAR" property="rdGrad" />
+    <result column="rd_occ" jdbcType="VARCHAR" property="rdOcc" />
+    <result column="rd_adr" jdbcType="VARCHAR" property="rdAdr" />
+    <result column="rd_pst" jdbcType="VARCHAR" property="rdPst" />
+    <result column="rd_tele" jdbcType="VARCHAR" property="rdTele" />
+    <result column="rd_idk" jdbcType="VARCHAR" property="rdIdk" />
+    <result column="rd_Eml" jdbcType="VARCHAR" property="rdEml" />
+    <result column="rd_oth" jdbcType="LONGVARCHAR" property="rdOth" />
+    <result column="rd_pc" jdbcType="VARCHAR" property="rdPc" />
+    <result column="Stypes" jdbcType="INTEGER" property="stypes" />
+    <result column="uptimes" jdbcType="TIMESTAMP" property="uptimes" />
+    <result column="upcount" jdbcType="INTEGER" property="upcount" />
+    <result column="out_trade_no" jdbcType="BIGINT" property="outTradeNO" />
+    <result column="id_card" jdbcType="VARCHAR" property="idCard" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    rd_id, id, rd_name, rd_sex, rd_birth, rd_reg, rd_over, rd_state, rd_roleid, rd_mny, 
+    rd_pwd, rd_PhotosPath, rd_py, rd_corp, rd_dpt, rd_grad, rd_occ, rd_adr, rd_pst, rd_tele, 
+    rd_idk, rd_Eml, rd_oth, rd_pc, Stypes, uptimes, upcount, out_trade_no,id_card
+  </sql>
+
+  <select id="findLastId" resultType="java.lang.Integer">
+    select max(rd_id) rd_id from  tb_reader
+    </select>
+</mapper>
